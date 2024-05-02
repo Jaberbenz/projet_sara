@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(240, 240, 240);
+    color: #1587c0;
+    padding: 25px;
+    text-align: left;
+}
+
+.logo {
+    color: rgb(59, 104, 126);
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.account-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.account-button button {
+    background-color: #000000;
+    color: #d9d7d7;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 80px;
+    cursor: pointer;
+}
+
+.account-button button:hover {
+    background-color: #777;
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+    
+}
+.container_one{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+
+
+.log {
+	position: absolute;
+	top: 15px; 
+	right: 40px; 
+  }
+  
+  .log img {
+	width: 43px; /* Adjust the size as needed */
+	height: auto;
+	border-radius: 50%; /* Makes it round */
+  }
+
+
+
+
+
+
+.header-image {
+    padding: 0; 
+    text-align: center;
+  }
+  
+  .header-image img {
+    width: 100%; 
+    max-width: 100%; 
+    height: 180px; 
+  }
+  .main-section {
+	text-align: center; 
+	margin-top: 50px; 
+	margin-bottom: 20px;
+
+  }
+
+  .main-title {
+	font-size: 2em; 
+	
+  }
+  table {
+	width: 40%; 
+	margin: 20px auto; 
+	margin-left: 330px;
+	border-collapse: ;
+	margin-bottom: 50px;
+	margin-top: 80px;
+	
+  }
+  
+
+  th, td {
+
+	padding: 10px; 
+  }
+tr{
+	background-color: aliceblue;
+}
+  th {
+	background-color:  aliceblue;
+  }
+  .buttons-container {
+	display: flex;
+	flex-direction: row; /* Arrange buttons vertically */
+	justify-content:; /* Space buttons evenly */
+	align-items: flex-end; /* Align buttons to the right */
+	width: 30%; /* Adjust the width of the buttons container */
+	position: absolute;
+	top: 58.7%;
+	left: 64%;
+  }
+
+  .buttons-container  button {
+	margin-bottom: 5px; /* Add margin between buttons */
+	border-radius: 30px;
+	border-width: 0px;
+	width: 60px;
+	padding: 10PX;
+	color: #ffffff;
+	font-weight: bolder;
+	
+  }
+  .buttons-container .reject button {
+	background-color:  #cb6666;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  .buttons-container .accept button {
+	background-color: #83bdcb;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .accept{
+
+	display: flex;
+	flex-direction: column;
+  }
+  .reject{
+	display: flex;
+	flex-direction: column;
+  }
+  .footer_one{
+	background-color: #103844;
+	  padding: 70px 0;
+  }
+  .footer-col{
+	 width: 25%;
+	 padding: 0 15px;
+  }
+  .footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+  }
+  .footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #dbdbdb;
+	display: block;
+	transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+  }
+  .footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgb(0, 0, 0);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+	color: #000000;
+	background-color: #ffffff;
+  }
+  
+  /*responsive*/
+  @media(max-width: 767px){
+	.footer-col{
+	  width: 50%;
+	  margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+	.footer-col{
+	  width: 100%;
+  }
+  }
+  input[type="submit"] {
+    background-color: #00ddff;
+    color: #fff;
+    border: none;
+	width: 200px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	margin-bottom: 30px;
+}
+button{
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #05799c;
+}
