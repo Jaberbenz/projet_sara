@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: covoiturage
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    volumes:
+      - dbdata:/var/lib/mysql
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
+
+  web:
+    build: .
+    ports:
+      - "85:80"
+    volumes:
+      - .:/var/www/html/
+    depends_on:
+      - db
+
+volumes:
+  dbdata:
